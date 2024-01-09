@@ -13,9 +13,9 @@
 # 1 правило - названия писать с большой буквы
 
 class Human:
-    # свойство classa - переменная, записанная внутри class
+    # свойство class - переменная, записанная внутри class
     head = '11'
-    #магический метод - главное различие между методом - это два нижних подчеркивания в начале и в конце
+    #магический метод - метод, только у него два нижних подчеркивания в начале и в конце
     #str - отвечает только за print
     def __str__(self):
         return f'{self.head} name: {self.name}, age: {self.age}, nickname: {self.nick}, abilka: {self.power}'
@@ -35,7 +35,7 @@ class Human:
 hum = Human('beka', 20, 'T9','писать стихи')
 hum2 = Human('Ибрагим', 14, 'kuizee', 'играть')
 hum3 = Human('Руслан', 16, 'rave', "играть на гитаре")
-# print(len(hum))
+print(len(hum))
 hum2.RT = 'Расширение территории'
 hum.age = 10
 print(hum.age)
@@ -51,8 +51,8 @@ class Human2:
 
     def hello(self):
         self.name = 'vondf'
-
 Human2.hello(hum)
+
 print(hum)
 
 
